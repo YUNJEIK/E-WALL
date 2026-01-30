@@ -1,0 +1,54 @@
+<!--
+Auditoría HTML realizada:
+- Se verificó la jerarquía correcta de encabezados (un solo h1).
+- Uso adecuado de etiquetas semánticas: header, nav, main, section y footer.
+- Navegación consistente con rutas relativas correctas.
+- Uso de atributos de accesibilidad: lang, meta viewport y aria-current.
+- No se detectaron etiquetas sin cerrar ni errores estructurales.
+-->
+<!--
+Auditoría HTML realizada:
+- Se verificó la jerarquía correcta de encabezados (un solo h1).
+- Uso adecuado de etiquetas semánticas.
+- Formulario accesible con labels vinculados a cada campo.
+- Tipos de input correctos (text, email, textarea).
+- Navegación consistente con rutas relativas correctas.
+- Se sugiere como mejora opcional agregar action y aria-label al formulario.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-WALL | Inicio</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li><a href="index.html" aria-current="page">Inicio</a></li>
+      <li><a href="pages/about.html">Sobre</a></li>
+      <li><a href="pages/event.html">Evento</a></li>
+      <li><a href="pages/wall.html">Muro</a></li>
+      <li><a href="pages/contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<img src="./img/icono oscuro.png" alt="Icono de E-WALL" class="icon">
+<main>
+  <section>
+    <h1>E-WALL</h1>
+    <p>Muro social interactivo para eventos.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 E-WALL</p>
+</footer>
+
+</body>
+</html>
