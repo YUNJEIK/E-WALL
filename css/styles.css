@@ -1,160 +1,239 @@
-/* Reset básico */
+/* =========================
+   RESET BÁSICO
+========================= */
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Base */
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-/* Navegación */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #222;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a[aria-current="page"] {
-  text-decoration: underline;
-}
-
-/* Layout */
-main {
-  padding: 2rem;
-}
-
-section {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 6px;
-}
-
-/* Formularios */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  max-width: 400px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input,
-textarea,
-button {
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-button {
-  background-color: #222;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
   background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
 }
+/* =========================
+   TIPOGRAFÍA
+========================= */
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.75rem;
 }
 
 p {
   margin-bottom: 1rem;
+  max-width: 700px;
 }
 
+ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+/* =========================
+  HEADER Y NAV
+========================= */
+
 header {
-  background-color: #1e1e2f;
+  background-color: #111;
   padding: 1rem;
 }
 
-header nav ul {
+nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-header nav a {
-  color: #ffffff;
+nav a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-header nav a:hover {
-  color: #ffcc00;
+nav a:hover {
+  text-decoration: underline;
 }
+/* =========================
+   LAYOUT
+========================= */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+/* =========================
+   IMÁGENES
+========================= */
 
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  display: block;
+  margin-top: 1rem;
 }
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-/* Responsive - Mobile */
-@media (max-width: 768px) {
+/* =========================
+   FORMULARIOS
+========================= */
 
-  /* Navegación */
+form {
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  /* Contenido principal */
-  main {
-    padding: 1rem;
-  }
-
-  /* Secciones */
-  section {
-    width: 100%;
+    gap: 0.8rem;
   }
 }
+/* =========================
+   HEADER
+========================= */
 
+.site-header {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 1rem 0;
+}
 
+.site-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* =========================
+   NAV
+========================= */
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.main-nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: #38bdf8;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 1rem auto 0;
+}
+
+/* =========================
+   CARDS (Eventos)
+========================= */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  background-color: #020617;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+}
+/* =========================
+   BOTONES
+========================= */
+
+.btn {
+  ...
+}
+
+.btn-primary {
+  ...
+}
