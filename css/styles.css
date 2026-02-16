@@ -11,3 +11,12 @@
   background-position: center;
   height: 90vh;
 }
+.logo img {
+  height: 50px;
+  width: auto;
+}
+.nav-menu{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
