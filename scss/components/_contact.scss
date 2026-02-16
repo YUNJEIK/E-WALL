@@ -1,0 +1,45 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.contact-card {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: fadeInUp 0.8s ease;
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input,
+    textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+
+      &:focus {
+        outline: none;
+        border-color: $color-primary;
+      }
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@use "abstracts/variables" as *;
+@use "base/typography";
+@use "components/buttons";
+@use "abstracts/mixins" as *;
+
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+section {
+  animation: fadeInUp 0.8s ease;
+}
+
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('../img/evento1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+}
+.nav-menu{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+body { 
+    background-color: $color-bg;
+    color: $color-text }
+h1 {
+    font-size: 3rem; }
+h2 {
+    font-size: 2rem; }   
+p {
+    font-size: 1rem; } 
+    
+    
+button {
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+ }
+
+
+
+p {
+  line-height:  1.6; 
+}
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+}
+/*titulos*/
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/*hover*/
+a {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
