@@ -1,21 +1,17 @@
 {
   "name": "e-wall",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Proyecto web E-WALL muro social interactivo para eventos",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass scss/styles.scss css/styles.css --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YUNJEIK/E-WALL.git"
+    "url": "https://github.com/YUNJEIK/E-WALL.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Verónica Luna",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/YUNJEIK/E-WALL/issues"
-  },
-  "homepage": "https://github.com/YUNJEIK/E-WALL#readme"
+  "dependencies": {
+    "sass": "^1.98.0"
+  }
 }

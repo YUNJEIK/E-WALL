@@ -1,16 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
 
 h3 {
   font-size: 1.4rem;
   opacity: 0.9;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 p {
@@ -21,6 +56,20 @@ a,
 button,
 .card {
   transition: all 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero {
+  animation: fadeUp 1s ease-out;
 }
 
 .btn-custom {
@@ -43,119 +92,73 @@ button:hover,
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-section {
-  animation: fadeInUp 0.8s ease;
-}
-
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/evento1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-body {
-  background-color: #0f172a;
-  color: #ffffff;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1rem;
-}
-
-button {
-  transition: 0.3s ease;
-}
-button:hover {
-  transform: translateY(-2px);
-}
-
-p {
-  line-height: 1.6;
-}
-
-.btn {
+.card {
+  border: none;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
-
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
 }
 
-/*titulos*/
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+.contact-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-
-/*hover*/
-a {
-  position: relative;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-}
-a:hover::after {
+.contact-card {
+  background: white;
+  max-width: 600px;
   width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 0.8s ease;
+}
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 25px;
+  }
+}
+.contact-card h1 {
+  margin-bottom: 15px;
+}
+.contact-card p {
+  margin-bottom: 25px;
+}
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-card form input,
+.contact-card form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.contact-card form input:focus,
+.contact-card form textarea:focus {
+  outline: none;
+  border-color: #0f172a;
+}
+.contact-card form button {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
