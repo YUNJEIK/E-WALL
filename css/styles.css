@@ -92,17 +92,40 @@ button:hover,
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
 .card {
   border: none;
   background: white;
   border-radius: 10px;
   padding: 20px;
+  text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.card img {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 15px auto;
+  display: block;
+}
+.card h3 {
+  margin-top: 10px;
+}
+.card p {
+  margin-top: 10px;
 }
 @media (max-width: 768px) {
   .card {
@@ -159,6 +182,73 @@ button:hover,
 }
 .contact-card form button {
   margin-top: 10px;
+}
+
+.about-section {
+  padding: 60px 20px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-images img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+.wall-section {
+  padding: 60px 20px;
+}
+
+.wall-intro {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.wall-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.wall-gallery img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wall-gallery img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /*# sourceMappingURL=styles.css.map */
