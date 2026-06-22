@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "titulo": "Bienvenido a E-WALL",
+    "contenido": "Esta es la primera publicación de ejemplo en el simulador de muro. Aquí es donde se puede experimentar cómo funciona el sistema de publicaciones en tiempo real.",
+    "autor": "Sistema",
+    "fecha": "2024-05-12T10:00:00.000Z",
+    "likes": 3,
+    "destacada": false
+  },
+  {
+    "id": 2,
+    "titulo": "Cómo usar el simulador",
+    "contenido": "Puedes crear nuevas publicaciones usando el formulario de arriba. Prueba a buscar, ordenar y marcar publicaciones como destacadas.",
+    "autor": "Admin",
+    "fecha": "2024-06-20T11:30:00.000Z",
+    "likes": 5,
+    "destacada": true
+  },
+  {
+    "id": 3,
+    "titulo": "Ideas para tu evento",
+    "contenido": "Imagina este simulador proyectado en una pantalla gigante durante tu boda o evento corporativo. Todos los invitados podrían ver sus fotos y mensajes en tiempo real.",
+    "autor": "Docente",
+    "fecha": "2025-06-22T09:15:00.000Z",
+    "likes": 2,
+    "destacada": false
+  }
+]
